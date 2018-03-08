@@ -1,0 +1,27 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VARIABLES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+$font-main: "proximanova",Arial, Helvetica, sans-serif;
+$font-main-bold: "proximanova-bold",Arial, Helvetica, sans-serif;
+$font-main-light: "proximanova-light",Arial, Helvetica, sans-serif;
+$font-headline: "p11memphis", Georgia, Times, "Times New Roman", serif;
+$font-headline-bold: "p11memphis-bold", Georgia, Times, "Times New Roman", serif;
+$font-headline-light: "p11memphis-bold", Georgia, Times, "Times New Roman", serif;
+
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+$color-primary: #b4a51a; /* main dominant color from logo */
+$color-secondary: #231f20; /* compliments main color */
+$color-tertiary: #5f6062; /* unique color, most likely from logo */
+$color-surrogate: #5f6062; /* a fourth color if necesary */
+
+// BREAKPOINTS
+$screen-xs: 350px; // Your phone is too small...
+$screen-sm: 640px; // iPhone
+$screen-md: 768px; // iPad
+$mq-md-lg: 845px;
+$screen-lg: 1024px; // Laptop
+$screen-xlg: 1248px; // Desktop
+$mq-xxlg: 1500px;

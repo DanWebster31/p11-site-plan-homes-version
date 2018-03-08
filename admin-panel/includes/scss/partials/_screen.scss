@@ -1,0 +1,352 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  GLOBAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body, html {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 400 normal 16px/16px $font-main, sans-serif;
+ @include fontsmoothing;
+  color: $color-white;
+  background-color: $color-white;
+  @include mq-md {
+    font-size: 15px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+p {
+  font-size: 1em;
+}
+
+p.small {
+  font-size: 0.75em;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: $color-primary;
+}
+
+a:hover, a:active {
+  color: $color-black;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Fonts */
+
+.font-main {
+  font-family: $font-main;
+}
+
+.font-main-bold {
+  font-family: $font-main-bold;
+}
+
+.font-main-light {
+  font-family: $font-main-light;
+}
+
+.font-headline {
+  font-family: $font-headline;
+}
+
+.font-headline-bold {
+  font-family: $font-headline-bold;
+}
+
+.font-headline-light {
+  font-family: $font-headline-light;
+}
+
+/* BG Color */
+
+.bgwhite { 
+  background-color: $color-white; 
+}
+
+.bgprimary { 
+  background-color: $color-primary; 
+}
+
+.bgsecondary { 
+  background-color: $color-secondary; 
+}
+
+.bgtertiary { 
+  background-color: $color-tertiary; 
+}
+
+.bgsurrogate { 
+  background-color: $color-surrogate; 
+}
+
+/* Text Color */
+
+.twhite { 
+  color: $color-white !important; 
+}
+
+.tprimary {
+  color: $color-primary; 
+}
+
+.tsecondary {
+  color: $color-secondary; 
+}
+
+.ttertiary {
+  color: $color-tertiary; 
+}
+
+.tsurrogate {
+  color: $color-surrogate; 
+}
+
+::selection {
+    background-color: $color-surrogate;
+    color: $color-white;
+}
+
+::-moz-selection {
+   background-color: $color-surrogate;
+    color: $color-white;
+}
+
+::-o-selection {
+    background-color: $color-surrogate;
+    color: $color-white;
+}
+
+::-ms-selection {
+    background-color: $color-surrogate;
+    color: $color-white;
+}
+
+::-webkit-selection {
+    background-color: $color-surrogate;
+    color: $color-white;
+}
+
+.cleanlist {
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+.cleanlist h2 {
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+   margin: 0 0 0.5em -15px;
+   padding: 0;
+}
+
+.cleanlist li {
+    font-size: 1.063em;
+    line-height: 1.125em;
+    margin: 0 0 0.5em;
+    padding: 0.25em 0;
+}
+.cleanlist li ul {
+    margin: 1em 0 0 1em;
+    padding: 0;
+}
+.cleanlist li ul li {
+    font-size: 1.063em;
+    line-height: 1.125em;
+    margin: 0 0 0.5em;
+    padding: 0.25em 0;
+}
+
+.boxheight {
+  height: 550px;
+}
+
+.fadecover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: fn-transparent-color($color-black , 0.5);
+}
+
+#uplink {
+  display: none;
+  position: fixed;
+  right: 2em;
+  bottom: 15em;
+  z-index: 2000;
+  background-color: fn-transparent-color($color-black , 0.7);
+}
+
+#uplink:hover {
+  background-color: #000;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  STRUCTURE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: $color-white;
+    color: $color-black;
+    padding: 0.2em 0;
+}
+
+header, footer, section {
+  clear: both;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper, .wrapper-full {
+    max-width: 980px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper-full {
+   width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  HEADER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.slicknav_menu {
+    display:none;
+
+  @include mq-md {
+    display: block;
+  }
+
+}
+
+#mobile-phone {
+  display: none;
+  position: fixed;
+  top: 65px;
+  right: 70px;
+  z-index: 900;
+  font-size: 2em;
+
+  @include mq-md {
+    display: block;
+  }
+
+}
+
+/* Top Snipe */
+
+#topsnipe {
+    float: left;
+    width: 35%;
+}
+#topsnipe h2 {
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+}
+#topsnipe h2 a {
+    color: $color-white;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+#topsnipe h2 a:hover {
+    color: $color-primary;
+}
+#topsocial {
+    float: right;
+    margin: 0 1.125em 0 0;
+    padding: 1.75em 0;
+    width: 35%;
+}
+#topsocial ul {
+    list-style: outside none none;
+    margin: .35em 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+#topsocial ul li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#topsocial ul li a:link, #topsocial ul li a:visited {
+    color: $color-white;
+    display: block;
+    font-size: 1.35em;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0 0.25em;
+    text-align: center;
+    text-decoration: none;
+}
+#topsocial ul li a:hover, #topsocial ul li a:active {
+    color: $color-primary;
+}
+#topsocial h2 {
+    font-size: 1.5em;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  HOME PAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FOOTER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

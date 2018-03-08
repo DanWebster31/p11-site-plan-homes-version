@@ -1,0 +1,247 @@
+#siteplan-outer {
+	height: auto;
+	max-width: 1600px;
+	width: 100%;
+	margin: 1em auto;
+	padding: 0 1em;
+}
+#siteplan {
+	position: relative;
+	display: block;
+	a {
+		position: absolute;
+	}
+}
+#base {
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+}
+#select-res {
+	max-width: 375px;
+	height: auto;
+	position: absolute;
+	left: 65%;
+	top: 40%;
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+}
+.res {
+	max-width: 40px;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.detailContent {
+	float: left;
+	padding: 0.4em 0;
+	.detail-photo {
+		float: left;
+		width: 100%;
+		height: auto;
+		padding-bottom: 0.4em;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		img.reverse {
+			-moz-transform: scaleX(-1);
+		  -o-transform: scaleX(-1);
+		  -webkit-transform: scaleX(-1);
+		  transform: scaleX(-1);
+		  filter: FlipH;
+		  -ms-filter: "FlipH";
+		}
+	}
+	h2 {
+		color: $color-primary;
+		font-size: 1.6em;
+		font-family: $font-main-semibold;
+		line-height: 1.3em;
+		margin: 0 0 0.1em 0;
+		padding: 0;
+		font-weight: 400;
+		@include mq-max(720px) {
+			font-size: 1.3em;
+		}
+	}
+	h3 {
+		color: $color-secondary;
+		font-size: 1.4em;
+		line-height: 1.3em;
+		margin: 0 0 0.2em 0;
+		padding: 0;
+		@include mq-max(720px) {
+			font-size: 1.1em;
+		}
+	}
+	h4 {
+		color: $color-black;
+		font-size: 1.2em;
+		line-height: 1.3em;
+		margin: 0 0 0.3em 0;
+		padding: 0;
+		@include mq-max(720px) {
+			font-size: 1em;
+		}
+	}
+	p {
+		font-family: $font-main;
+		font-size: 0.85em;
+		line-height: 1.3em;
+		margin: 0;
+		padding: 0;
+		@include mq-max(720px) {
+			font-size: 0.65em;
+			line-height: 1.2em;
+		}
+	}
+	a:link, a:visited {
+		width: 100%;
+		display: inline-block;
+		padding: 0.6em 0;
+		margin: 0.7em 0 0 0;
+		color: #fff;
+		background: $color-secondary;
+		text-align: center;
+		text-decoration: none;
+		font-family: $font-main-bold;
+		font-size: 1.2em;
+		line-height: 1.2em;
+		font-weight: 700;
+		@include mq-max(720px) {
+			font-size: 1em;
+			padding: 0.4em 0;
+			margin: 0.5em 0 0 0;
+		}
+	}
+	a:hover {
+		color: #fff;
+		background: $color-primary;
+	}
+}
+.boldage {
+	font-family: $font-main-bold;
+	font-weight: 700;
+}
+#availability-list {
+	display: block;
+	max-width: 1100px;
+	width: 100%;
+	margin: 1em auto;
+	padding: 1em;
+	overflow: hidden;
+}
+h2.date {
+	font-size: 1.3em;
+	color: $color-black;
+	width: 100%;
+	float: left;
+	padding: 1em;
+	border-bottom: 1px solid $color-surrogate;
+}
+.availability-list-item {
+	width: 100%;
+	float: left;
+	padding: 1.5em;
+	border-bottom: 1px solid $color-surrogate;
+	.list-item-text {
+		float: left;
+		width: 68%;
+		padding-top: 0;
+		h2 {
+			color: $color-primary;
+			font-size: 1.4em;
+			font-family: $font-main-semibold;
+			line-height: 1.3em;
+			margin-bottom: 0.15em;
+			@include mq-max(720px) {
+				font-size: 1.3em;
+			}
+		}
+		h3 {
+			color: $color-black;
+			font-size: 1.2em;
+			line-height: 1.3em;
+			margin-bottom: 0.2em;
+			@include mq-max(720px) {
+				font-size: 1.1em;
+			}
+		}
+		h4 {
+			color: $color-black;
+			font-size: 1.2em;
+			line-height: 1.3em;
+			margin-bottom: 0.2em;
+			@include mq-max(720px) {
+				font-size: 1.1em;
+			}
+		}
+		p {
+			font-size: 0.9em;
+			line-height: 1.4em;
+			margin-bottom: 0.2em;
+			@include mq-max(720px) {
+				font-size: 0.85em;
+			}
+		}
+		a:link, a:visited {
+			display: inline-block;
+			padding: 0.5em;
+			margin: 0.5em 0 0 0;
+			color: $color-white;
+			background: $color-secondary;
+			text-align: center;
+			text-decoration: none;
+			font-family: $font-main-bold;
+			font-size: 1em;
+			line-height: 1.2em;
+			font-weight: 700;
+		}
+		a:hover {
+			background: $color-primary;
+		}
+	}
+	.list-item-photo {
+		float: left;
+		padding: 0 1em 0 0;
+		width: 30%;
+		height: auto;
+	}
+
+	.list-item-photo img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 800px) {
+	// #select-res {
+	// 	display: none;
+	// }
+	// .res {
+	// 	display: none;
+	// }
+	h2.date {
+		font-size: 3.2vw;
+	}
+	.availability-list-item {
+		padding: 1em;
+		.list-item-photo {
+			width: 100%;
+			padding: 00;
+		}
+		.list-item-text {
+			width: 100%;
+			padding-top: 0.7em;
+		}
+	}
+}
